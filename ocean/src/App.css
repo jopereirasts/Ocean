@@ -3,7 +3,12 @@
   border-radius: 1em;
   padding: 2em;
   text-align: center;
-  box-shadow: 0.25rem 0.25rem black;
+  transition: all 0.1s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0.15rem 0.15rem black;
+  translate: -0.15rem -0.15rem;
 }
 
 .card > h2 {
@@ -12,4 +17,11 @@
 
 .card > img {
   border-radius: 1rem;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0.15rem 0.15rem black;
+}
+
+.card:hover > img {
+  translate: -0.15rem -0.15rem;
+  box-shadow: 0.15rem 0.15rem #FEA6CA;
 }
