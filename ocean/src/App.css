@@ -9,6 +9,7 @@
 .card:hover {
   box-shadow: 0.15rem 0.15rem black;
   translate: -0.15rem -0.15rem;
+  cursor: pointer;
 }
 
 .card > h2 {
@@ -24,4 +25,8 @@
 .card:hover > img {
   translate: -0.15rem -0.15rem;
   box-shadow: 0.15rem 0.15rem #FEA6CA;
+}
+
+.title > h2{
+  border-left: 0.1rem solid #AA76CA;
 }
