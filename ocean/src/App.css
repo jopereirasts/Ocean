@@ -27,6 +27,34 @@
   box-shadow: 0.15rem 0.15rem #FEA6CA;
 }
 
-.title > h2{
+.title {
   border-left: 0.1rem solid #AA76CA;
 }
+
+.tag {
+  border: 0.1rem solid black;
+  border-radius: 15px 15px 15px 15px;
+  width: 4.6rem;
+  height: 1rem;
+  padding: 0.25rem;
+  display: flex;
+  background-color: black;
+  margin: 0.3rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tag > p {
+  align-self: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #AA76CA;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
