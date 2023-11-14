@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import Card from './components/Card/Card'
 
@@ -20,13 +21,33 @@ function App() {
     tags: ["Status: Vivo", "Espécie: Humana", "Origem: Terra C-137"]
   }
 
-  const itens = [item1,item2,item3];
+  //const itens = [item1,item2,item3];
 
+  // useState
+  const [itens, setItems] = useState([])
+
+  async function carregarDadosApi(){
+    const apiUrl = "https://rickandmortyapi.com/api/character/"
+
+    const response = await fetch(apiUrl)
+
+    const body = await response.json()
+    
+    setItems(body.results)
+  }
+
+  useEffect(function (){
+    carregarDadosApi()
+  }, [])
+
+  
   return (
     <>
-    {itens.map(function (element){
-      return <Card item={element} />
-    })}
+      <div className='cards'>
+      {itens.map(function (element){
+        return <Card item={element} />
+      })}
+      </div>
     </>
   )
 }
