@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css'
+import '../../App.css'
 import Card from '../Card/Card';
 
 export default function Home() {
@@ -19,7 +19,8 @@ export default function Home() {
         tags: [
           `Status: ${element.status}`,
           `Species: ${element.species}`,
-          `Origin: ${element.origin.name}`
+          `Origin: ${element.origin.name}`,
+          `Episodes: ${element.episode.length}`
         ]
       }
     })
