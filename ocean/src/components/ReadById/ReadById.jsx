@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export default function ReadById(){
-    return <div>ReadById</div>
+    const { id } = useParams()
+
+    return <div>ReadById: {id}</div>
 }
