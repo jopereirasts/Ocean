@@ -27,7 +27,7 @@
 .info-title {
     font-weight: bold;
     font-size: 2rem;
-    border-left: 0.5rem solid whitesmoke;
+    border-left: 0.5rem solid rgb(255, 202, 202);
     padding-left: 0.5rem;
 }
 

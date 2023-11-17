@@ -34,7 +34,7 @@ export default function ReadById() {
       <div className="info">
         <div className="info-tag">Status: Alive</div>
 
-        <h1 className="info-title">Rick Sanchez</h1>
+        <h1 className="info-title">{item.name}</h1>
 
         <div className="info-row">
           <div className="info-label">Species:</div>
